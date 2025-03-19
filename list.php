@@ -6,7 +6,7 @@ $result = $conn->query($sql);
 ?>
 
 <div style="margin-left:15%;padding:1px 16px;height:1000px;">
-    <div class="jouer"> <button class="btn btn-primary"> <a href="index.php" class="text-white text-decoration-none">Ajouter</a></button></div>
+    <div class="jouer"> <button class="btn btn-primary"> <a href="add.php" class="text-white text-decoration-none">Ajouter</a></button></div>
     <div class='kan'>
         <table id="myTable" class="display nowrap" style="width:100%"> 
             <thead> 
@@ -32,7 +32,7 @@ $result = $conn->query($sql);
                     <td><?php echo $obj->morts; ?></td>
                     <td><?php echo $obj->blesse; ?></td>
                     <td><?php echo $obj->collision; ?></td>
-                    <td><a href="<?php echo $obj->lien; ?>" target="_blank">Lien</a></td>
+                    <td><a href="<?php echo $obj->lien; ?>" target="_blank"><?php echo $obj->lien; ?></a></td>
                     <td>
                         <a href="edit.php?id=<?php echo $obj->id; ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i>Modifier</a>
                         <a href="delete.php?id=<?php echo $obj->id; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?');"><i class="fas fa-trash-alt"></i>sup</a>

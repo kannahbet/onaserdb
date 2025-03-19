@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <img src="" alt="">
 <ul>
-<li><a href="index.php">Ajouter</a></li>
+  <li><a href="index.php">Home</a></li>
+
+<li><a href="add.php">Ajouter</a></li>
   <li><a href="list.php">Lister</a></li>
 
 </ul>
